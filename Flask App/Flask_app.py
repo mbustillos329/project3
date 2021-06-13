@@ -1,4 +1,4 @@
-rom flask import Flask, render_template, redirect, request
+from flask import Flask, render_template, redirect, request
 from xgboost import xception
 from tensorflow.keras.applications.xception import decode_predictions
 import pandas as pd
