@@ -63,4 +63,4 @@ for file in os.listdir(directory)[:3]:
             })
 
 
-prediction_list 
+decode_predictions
