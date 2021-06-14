@@ -83,19 +83,217 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   
 <!---------------------- TABLE DISPLAY ---------------------------------------->
-  <div class="w3-panel">
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third">
-        <h5><strong>Select from our cat gallery!</strong></h5>
-        <img src="images/user_cat_dog.jpg" style="width:100%" alt="Render selected image">
-      </div>
-
-    </div>
-  </div>
-  <hr>
-
-  <hr>
-
+<table border="3" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>__</th>
+      <th>Image</th>
+      <th>Prediction</th>
+      <th>Probability</th>
+      <th>Probability Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+  <!-- <tr><td></td><td>Image</td><td>Prediction</td><td>Probability</td><td>Probability Percentage</td></tr>
+  <tr> -->
+    
+    
+    <td>0</td><td>63.jpg</td><td>basset</td><td>0.26387819647789</td><td>26.39</td></tr>
+  <tr><td>1</td><td>63.jpg</td><td>bloodhound</td><td>0.04325111582875252</td><td>4.33</td></tr>
+  <tr><td>2</td><td>63.jpg</td><td>Great_Dane</td><td>0.041339851915836334</td><td>4.13</td></tr>
+  <tr><td>3</td><td>62.jpg</td><td>Labrador_retriever</td><td>0.9508597254753113</td><td>95.09</td></tr>
+  <tr><td>4</td><td>62.jpg</td><td>golden_retriever</td><td>0.01688258908689022</td><td>1.69</td></tr>
+  <tr><td>5</td><td>62.jpg</td><td>flat-coated_retriever</td><td>0.008420618250966072</td><td>0.84</td></tr>
+  <tr><td>6</td><td>60.jpg</td><td>basenji</td><td>0.08317218720912933</td><td>8.32</td></tr>
+  <tr><td>7</td><td>60.jpg</td><td>English_foxhound</td><td>0.07371725887060165</td><td>7.37</td></tr>
+  <tr><td>8</td><td>60.jpg</td><td>American_Staffordshire_terrier</td><td>0.06596606969833374</td><td>6.6</td></tr>
+  <tr><td>9</td><td>48.jpg</td><td>English_springer</td><td>0.6916186809539795</td><td>69.16</td></tr>
+  <tr><td>10</td><td>48.jpg</td><td>Welsh_springer_spaniel</td><td>0.03746843338012695</td><td>3.75</td></tr>
+  <tr><td>11</td><td>48.jpg</td><td>Sussex_spaniel</td><td>0.02111305110156536</td><td>2.11</td></tr>
+  <tr><td>12</td><td>49.jpg</td><td>collie</td><td>0.6558191180229187</td><td>65.58</td></tr>
+  <tr><td>13</td><td>49.jpg</td><td>Shetland_sheepdog</td><td>0.11374960094690323</td><td>11.37</td></tr>
+  <tr><td>14</td><td>49.jpg</td><td>chow</td><td>0.019973408430814743</td><td>2.0</td></tr>
+  <tr><td>15</td><td>61.jpg</td><td>American_Staffordshire_terrier</td><td>0.9310916066169739</td><td>93.11</td></tr>
+  <tr><td>16</td><td>61.jpg</td><td>Staffordshire_bullterrier</td><td>0.02459375560283661</td><td>2.46</td></tr>
+  <tr><td>17</td><td>61.jpg</td><td>bull_mastiff</td><td>0.01246345043182373</td><td>1.25</td></tr>
+  <tr><td>18</td><td>59.jpg</td><td>Rhodesian_ridgeback</td><td>0.5861812233924866</td><td>58.62</td></tr>
+  <tr><td>19</td><td>59.jpg</td><td>redbone</td><td>0.34169965982437134</td><td>34.17</td></tr>
+  <tr><td>20</td><td>59.jpg</td><td>vizsla</td><td>0.0247202068567276</td><td>2.47</td></tr>
+  <tr><td>21</td><td>65.jpg</td><td>Leonberg</td><td>0.6695495843887329</td><td>66.95</td></tr>
+  <tr><td>22</td><td>65.jpg</td><td>German_shepherd</td><td>0.06231824681162834</td><td>6.23</td></tr>
+  <tr><td>23</td><td>65.jpg</td><td>Norwegian_elkhound</td><td>0.04385470598936081</td><td>4.39</td></tr>
+  <tr><td>24</td><td>64.jpg</td><td>Labrador_retriever</td><td>0.9589946269989014</td><td>95.9</td></tr>
+  <tr><td>25</td><td>64.jpg</td><td>flat-coated_retriever</td><td>0.006192194297909737</td><td>0.62</td></tr>
+  <tr><td>26</td><td>64.jpg</td><td>German_short-haired_pointer</td><td>0.0050597283989191055</td><td>0.51</td></tr>
+  <tr><td>27</td><td>58.jpg</td><td>beagle</td><td>0.5502959489822388</td><td>55.03</td></tr>
+  <tr><td>28</td><td>58.jpg</td><td>black-and-tan_coonhound</td><td>0.09715249389410019</td><td>9.72</td></tr>
+  <tr><td>29</td><td>58.jpg</td><td>Walker_hound</td><td>0.07817556709051132</td><td>7.82</td></tr>
+  <tr><td>30</td><td>8.jpg</td><td>toy_terrier</td><td>0.1595556139945984</td><td>15.96</td></tr>
+  <tr><td>31</td><td>8.jpg</td><td>whippet</td><td>0.14947400987148285</td><td>14.95</td></tr>
+  <tr><td>32</td><td>8.jpg</td><td>wire-haired_fox_terrier</td><td>0.11511638760566711</td><td>11.51</td></tr>
+  <tr><td>33</td><td>9.jpg</td><td>Italian_greyhound</td><td>0.3841865062713623</td><td>38.42</td></tr>
+  <tr><td>34</td><td>9.jpg</td><td>Mexican_hairless</td><td>0.1354425847530365</td><td>13.54</td></tr>
+  <tr><td>35</td><td>9.jpg</td><td>whippet</td><td>0.03530782833695412</td><td>3.53</td></tr>
+  <tr><td>36</td><td>14.jpg</td><td>Egyptian_cat</td><td>0.5340048670768738</td><td>53.4</td></tr>
+  <tr><td>37</td><td>14.jpg</td><td>tabby</td><td>0.21141520142555237</td><td>21.14</td></tr>
+  <tr><td>38</td><td>14.jpg</td><td>tiger_cat</td><td>0.060526974499225616</td><td>6.05</td></tr>
+  <tr><td>39</td><td>28.jpg</td><td>tiger_cat</td><td>0.42800939083099365</td><td>42.8</td></tr>
+  <tr><td>40</td><td>28.jpg</td><td>tabby</td><td>0.2794872224330902</td><td>27.95</td></tr>
+  <tr><td>41</td><td>28.jpg</td><td>Egyptian_cat</td><td>0.06612670421600342</td><td>6.61</td></tr>
+  <tr><td>42</td><td>29.jpg</td><td>Egyptian_cat</td><td>0.5681304335594177</td><td>56.81</td></tr>
+  <tr><td>43</td><td>29.jpg</td><td>tabby</td><td>0.25324273109436035</td><td>25.32</td></tr>
+  <tr><td>44</td><td>29.jpg</td><td>tiger_cat</td><td>0.1012091264128685</td><td>10.12</td></tr>
+  <tr><td>45</td><td>15.jpg</td><td>Persian_cat</td><td>0.0693410187959671</td><td>6.93</td></tr>
+  <tr><td>46</td><td>15.jpg</td><td>tabby</td><td>0.06771823018789291</td><td>6.77</td></tr>
+  <tr><td>47</td><td>15.jpg</td><td>tiger_cat</td><td>0.041978687047958374</td><td>4.2</td></tr>
+  <tr><td>48</td><td>17.jpg</td><td>tabby</td><td>0.2740776836872101</td><td>27.41</td></tr>
+  <tr><td>49</td><td>17.jpg</td><td>Persian_cat</td><td>0.14697249233722687</td><td>14.7</td></tr>
+  <tr><td>50</td><td>17.jpg</td><td>lynx</td><td>0.1109943613409996</td><td>11.1</td></tr>
+  <tr><td>51</td><td>16.jpg</td><td>Persian_cat</td><td>0.06509116291999817</td><td>6.51</td></tr>
+  <tr><td>52</td><td>16.jpg</td><td>sleeping_bag</td><td>0.04751961678266525</td><td>4.75</td></tr>
+  <tr><td>53</td><td>16.jpg</td><td>tabby</td><td>0.043324824422597885</td><td>4.33</td></tr>
+  <tr><td>54</td><td>13.jpg</td><td>Persian_cat</td><td>0.4118691086769104</td><td>41.19</td></tr>
+  <tr><td>55</td><td>13.jpg</td><td>tabby</td><td>0.03830365836620331</td><td>3.83</td></tr>
+  <tr><td>56</td><td>13.jpg</td><td>lynx</td><td>0.027990244328975677</td><td>2.8</td></tr>
+  <tr><td>57</td><td>39.jpg</td><td>studio_couch</td><td>0.07877126336097717</td><td>7.88</td></tr>
+  <tr><td>58</td><td>39.jpg</td><td>quilt</td><td>0.06550850719213486</td><td>6.55</td></tr>
+  <tr><td>59</td><td>39.jpg</td><td>Siamese_cat</td><td>0.055627238005399704</td><td>5.56</td></tr>
+  <tr><td>60</td><td>11.jpg</td><td>flat-coated_retriever</td><td>0.7184417843818665</td><td>71.84</td></tr>
+  <tr><td>61</td><td>11.jpg</td><td>curly-coated_retriever</td><td>0.02919132076203823</td><td>2.92</td></tr>
+  <tr><td>62</td><td>11.jpg</td><td>Newfoundland</td><td>0.02785005047917366</td><td>2.79</td></tr>
+  <tr><td>63</td><td>10.jpg</td><td>Egyptian_cat</td><td>0.11434314399957657</td><td>11.43</td></tr>
+  <tr><td>64</td><td>10.jpg</td><td>tabby</td><td>0.09047055244445801</td><td>9.05</td></tr>
+  <tr><td>65</td><td>10.jpg</td><td>Siamese_cat</td><td>0.07473839074373245</td><td>7.47</td></tr>
+  <tr><td>66</td><td>38.jpg</td><td>Egyptian_cat</td><td>0.1813458353281021</td><td>18.13</td></tr>
+  <tr><td>67</td><td>38.jpg</td><td>Siamese_cat</td><td>0.11528553813695908</td><td>11.53</td></tr>
+  <tr><td>68</td><td>38.jpg</td><td>quilt</td><td>0.1150956004858017</td><td>11.51</td></tr>
+  <tr><td>69</td><td>21.jpg</td><td>Egyptian_cat</td><td>0.5887545943260193</td><td>58.88</td></tr>
+  <tr><td>70</td><td>21.jpg</td><td>tabby</td><td>0.1585724800825119</td><td>15.86</td></tr>
+  <tr><td>71</td><td>21.jpg</td><td>tiger_cat</td><td>0.13639754056930542</td><td>13.64</td></tr>
+  <tr><td>72</td><td>35.jpg</td><td>hamper</td><td>0.5233978629112244</td><td>52.34</td></tr>
+  <tr><td>73</td><td>35.jpg</td><td>bassinet</td><td>0.04633650183677673</td><td>4.63</td></tr>
+  <tr><td>74</td><td>35.jpg</td><td>shopping_basket</td><td>0.04111127927899361</td><td>4.11</td></tr>
+  <tr><td>75</td><td>34.jpg</td><td>tabby</td><td>0.3706461489200592</td><td>37.06</td></tr>
+  <tr><td>76</td><td>34.jpg</td><td>Egyptian_cat</td><td>0.3416523039340973</td><td>34.17</td></tr>
+  <tr><td>77</td><td>34.jpg</td><td>tiger_cat</td><td>0.07561634480953217</td><td>7.56</td></tr>
+  <tr><td>78</td><td>20.jpg</td><td>Staffordshire_bullterrier</td><td>0.47783148288726807</td><td>47.78</td></tr>
+  <tr><td>79</td><td>20.jpg</td><td>American_Staffordshire_terrier</td><td>0.3353663384914398</td><td>33.54</td></tr>
+  <tr><td>80</td><td>20.jpg</td><td>bull_mastiff</td><td>0.06340004503726959</td><td>6.34</td></tr>
+  <tr><td>81</td><td>36.jpg</td><td>tiger_cat</td><td>0.14794965088367462</td><td>14.79</td></tr>
+  <tr><td>82</td><td>36.jpg</td><td>tabby</td><td>0.14753034710884094</td><td>14.75</td></tr>
+  <tr><td>83</td><td>36.jpg</td><td>Egyptian_cat</td><td>0.10948118567466736</td><td>10.95</td></tr>
+  <tr><td>84</td><td>22.jpg</td><td>Persian_cat</td><td>0.6595784425735474</td><td>65.96</td></tr>
+  <tr><td>85</td><td>22.jpg</td><td>tabby</td><td>0.12132071703672409</td><td>12.13</td></tr>
+  <tr><td>86</td><td>22.jpg</td><td>Egyptian_cat</td><td>0.04573759809136391</td><td>4.57</td></tr>
+  <tr><td>87</td><td>23.jpg</td><td>wire-haired_fox_terrier</td><td>0.24501961469650269</td><td>24.5</td></tr>
+  <tr><td>88</td><td>23.jpg</td><td>papillon</td><td>0.09414289891719818</td><td>9.41</td></tr>
+  <tr><td>89</td><td>23.jpg</td><td>toy_terrier</td><td>0.07053767889738083</td><td>7.05</td></tr>
+  <tr><td>90</td><td>37.jpg</td><td>tabby</td><td>0.5307157635688782</td><td>53.07</td></tr>
+  <tr><td>91</td><td>37.jpg</td><td>tiger_cat</td><td>0.23537254333496094</td><td>23.54</td></tr>
+  <tr><td>92</td><td>37.jpg</td><td>Egyptian_cat</td><td>0.08289511501789093</td><td>8.29</td></tr>
+  <tr><td>93</td><td>33.jpg</td><td>Tibetan_mastiff</td><td>0.16496528685092926</td><td>16.5</td></tr>
+  <tr><td>94</td><td>33.jpg</td><td>collie</td><td>0.07141978293657303</td><td>7.14</td></tr>
+  <tr><td>95</td><td>33.jpg</td><td>malamute</td><td>0.06407275050878525</td><td>6.41</td></tr>
+  <tr><td>96</td><td>27.jpg</td><td>Pomeranian</td><td>0.32760825753211975</td><td>32.76</td></tr>
+  <tr><td>97</td><td>27.jpg</td><td>bucket</td><td>0.052963171154260635</td><td>5.3</td></tr>
+  <tr><td>98</td><td>27.jpg</td><td>Persian_cat</td><td>0.049122750759124756</td><td>4.91</td></tr>
+  <tr><td>99</td><td>26.jpg</td><td>tabby</td><td>0.5235008001327515</td><td>52.35</td></tr>
+  <tr><td>100</td><td>26.jpg</td><td>Egyptian_cat</td><td>0.0684177428483963</td><td>6.84</td></tr>
+  <tr><td>101</td><td>26.jpg</td><td>tiger_cat</td><td>0.05792517215013504</td><td>5.79</td></tr>
+  <tr><td>102</td><td>32.jpg</td><td>Appenzeller</td><td>0.07639531046152115</td><td>7.64</td></tr>
+  <tr><td>103</td><td>32.jpg</td><td>miniature_pinscher</td><td>0.06755941361188889</td><td>6.76</td></tr>
+  <tr><td>104</td><td>32.jpg</td><td>beagle</td><td>0.05765265226364136</td><td>5.77</td></tr>
+  <tr><td>105</td><td>18.jpg</td><td>tabby</td><td>0.4423764944076538</td><td>44.24</td></tr>
+  <tr><td>106</td><td>18.jpg</td><td>Egyptian_cat</td><td>0.31316816806793213</td><td>31.32</td></tr>
+  <tr><td>107</td><td>18.jpg</td><td>tiger_cat</td><td>0.07515811175107956</td><td>7.52</td></tr>
+  <tr><td>108</td><td>24.jpg</td><td>redbone</td><td>0.9605536460876465</td><td>96.06</td></tr>
+  <tr><td>109</td><td>24.jpg</td><td>Rhodesian_ridgeback</td><td>0.028515033423900604</td><td>2.85</td></tr>
+  <tr><td>110</td><td>24.jpg</td><td>vizsla</td><td>0.002884141867980361</td><td>0.29</td></tr>
+  <tr><td>111</td><td>30.jpg</td><td>tabby</td><td>0.5087658762931824</td><td>50.88</td></tr>
+  <tr><td>112</td><td>30.jpg</td><td>tiger_cat</td><td>0.11902675777673721</td><td>11.9</td></tr>
+  <tr><td>113</td><td>30.jpg</td><td>Egyptian_cat</td><td>0.10534194111824036</td><td>10.53</td></tr>
+  <tr><td>114</td><td>31.jpg</td><td>tabby</td><td>0.2560628354549408</td><td>25.61</td></tr>
+  <tr><td>115</td><td>31.jpg</td><td>tiger_cat</td><td>0.11243610829114914</td><td>11.24</td></tr>
+  <tr><td>116</td><td>31.jpg</td><td>Egyptian_cat</td><td>0.07795634120702744</td><td>7.8</td></tr>
+  <tr><td>117</td><td>25.jpg</td><td>window_screen</td><td>0.28098514676094055</td><td>28.1</td></tr>
+  <tr><td>118</td><td>25.jpg</td><td>Egyptian_cat</td><td>0.22181229293346405</td><td>22.18</td></tr>
+  <tr><td>119</td><td>25.jpg</td><td>tabby</td><td>0.032540492713451385</td><td>3.25</td></tr>
+  <tr><td>120</td><td>19.jpg</td><td>Egyptian_cat</td><td>0.2790580987930298</td><td>27.91</td></tr>
+  <tr><td>121</td><td>19.jpg</td><td>tabby</td><td>0.21138276159763336</td><td>21.14</td></tr>
+  <tr><td>122</td><td>19.jpg</td><td>tiger_cat</td><td>0.08303237706422806</td><td>8.3</td></tr>
+  <tr><td>123</td><td>42.jpg</td><td>Angora</td><td>0.10176466405391693</td><td>10.18</td></tr>
+  <tr><td>124</td><td>42.jpg</td><td>groenendael</td><td>0.0909368246793747</td><td>9.09</td></tr>
+  <tr><td>125</td><td>42.jpg</td><td>affenpinscher</td><td>0.0854133814573288</td><td>8.54</td></tr>
+  <tr><td>126</td><td>4.jpg</td><td>redbone</td><td>0.17910198867321014</td><td>17.91</td></tr>
+  <tr><td>127</td><td>4.jpg</td><td>Irish_terrier</td><td>0.11745481193065643</td><td>11.75</td></tr>
+  <tr><td>128</td><td>4.jpg</td><td>Rhodesian_ridgeback</td><td>0.05277010053396225</td><td>5.28</td></tr>
+  <tr><td>129</td><td>56.jpg</td><td>toy_terrier</td><td>0.713138997554779</td><td>71.31</td></tr>
+  <tr><td>130</td><td>56.jpg</td><td>Chihuahua</td><td>0.22228197753429413</td><td>22.23</td></tr>
+  <tr><td>131</td><td>56.jpg</td><td>Italian_greyhound</td><td>0.00649345712736249</td><td>0.65</td></tr>
+  <tr><td>132</td><td>5.jpg</td><td>Gordon_setter</td><td>0.7877261638641357</td><td>78.77</td></tr>
+  <tr><td>133</td><td>5.jpg</td><td>black-and-tan_coonhound</td><td>0.07302635163068771</td><td>7.3</td></tr>
+  <tr><td>134</td><td>5.jpg</td><td>toy_terrier</td><td>0.01297802198678255</td><td>1.3</td></tr>
+  <tr><td>135</td><td>57.jpg</td><td>English_setter</td><td>0.9867846369743347</td><td>98.68</td></tr>
+  <tr><td>136</td><td>57.jpg</td><td>clumber</td><td>0.001089483150281012</td><td>0.11</td></tr>
+  <tr><td>137</td><td>57.jpg</td><td>cocker_spaniel</td><td>0.0004591156612150371</td><td>0.05</td></tr>
+  <tr><td>138</td><td>43.jpg</td><td>tabby</td><td>0.5422468781471252</td><td>54.22</td></tr>
+  <tr><td>139</td><td>43.jpg</td><td>Persian_cat</td><td>0.07408995926380157</td><td>7.41</td></tr>
+  <tr><td>140</td><td>43.jpg</td><td>Egyptian_cat</td><td>0.07348755747079849</td><td>7.35</td></tr>
+  <tr><td>141</td><td>55.jpg</td><td>vizsla</td><td>0.5191783905029297</td><td>51.92</td></tr>
+  <tr><td>142</td><td>55.jpg</td><td>American_Staffordshire_terrier</td><td>0.15197071433067322</td><td>15.2</td></tr>
+  <tr><td>143</td><td>55.jpg</td><td>miniature_pinscher</td><td>0.04215286672115326</td><td>4.22</td></tr>
+  <tr><td>144</td><td>7.jpg</td><td>Persian_cat</td><td>0.16004930436611176</td><td>16.0</td></tr>
+  <tr><td>145</td><td>7.jpg</td><td>computer_keyboard</td><td>0.059338971972465515</td><td>5.93</td></tr>
+  <tr><td>146</td><td>7.jpg</td><td>Shetland_sheepdog</td><td>0.019647857174277306</td><td>1.96</td></tr>
+  <tr><td>147</td><td>41.jpg</td><td>tabby</td><td>0.200981006026268</td><td>20.1</td></tr>
+  <tr><td>148</td><td>41.jpg</td><td>Egyptian_cat</td><td>0.0833141878247261</td><td>8.33</td></tr>
+  <tr><td>149</td><td>41.jpg</td><td>tiger_cat</td><td>0.0826244130730629</td><td>8.26</td></tr>
+  <tr><td>150</td><td>40.jpg</td><td>Egyptian_cat</td><td>0.34169530868530273</td><td>34.17</td></tr>
+  <tr><td>151</td><td>40.jpg</td><td>Siamese_cat</td><td>0.08399233222007751</td><td>8.4</td></tr>
+  <tr><td>152</td><td>40.jpg</td><td>tabby</td><td>0.07466144114732742</td><td>7.47</td></tr>
+  <tr><td>153</td><td>54.jpg</td><td>hog</td><td>0.09921148419380188</td><td>9.92</td></tr>
+  <tr><td>154</td><td>54.jpg</td><td>French_bulldog</td><td>0.09393592923879623</td><td>9.39</td></tr>
+  <tr><td>155</td><td>54.jpg</td><td>American_black_bear</td><td>0.056338898837566376</td><td>5.63</td></tr>
+  <tr><td>156</td><td>6.jpg</td><td>Cardigan</td><td>0.4636407792568207</td><td>46.36</td></tr>
+  <tr><td>157</td><td>6.jpg</td><td>kelpie</td><td>0.1992482841014862</td><td>19.92</td></tr>
+  <tr><td>158</td><td>6.jpg</td><td>Chihuahua</td><td>0.04523654654622078</td><td>4.52</td></tr>
+  <tr><td>159</td><td>2.jpg</td><td>web_site</td><td>0.3116510808467865</td><td>31.17</td></tr>
+  <tr><td>160</td><td>2.jpg</td><td>tabby</td><td>0.18851222097873688</td><td>18.85</td></tr>
+  <tr><td>161</td><td>2.jpg</td><td>Egyptian_cat</td><td>0.08512938767671585</td><td>8.51</td></tr>
+  <tr><td>162</td><td>50.jpg</td><td>English_foxhound</td><td>0.28955647349357605</td><td>28.96</td></tr>
+  <tr><td>163</td><td>50.jpg</td><td>beagle</td><td>0.12962913513183594</td><td>12.96</td></tr>
+  <tr><td>164</td><td>50.jpg</td><td>Walker_hound</td><td>0.08817271888256073</td><td>8.82</td></tr>
+  <tr><td>165</td><td>44.jpg</td><td>skunk</td><td>0.06224093213677406</td><td>6.22</td></tr>
+  <tr><td>166</td><td>44.jpg</td><td>shopping_cart</td><td>0.04363904148340225</td><td>4.36</td></tr>
+  <tr><td>167</td><td>44.jpg</td><td>shopping_basket</td><td>0.04065341129899025</td><td>4.07</td></tr>
+  <tr><td>168</td><td>45.jpg</td><td>Siberian_husky</td><td>0.4845375716686249</td><td>48.45</td></tr>
+  <tr><td>169</td><td>45.jpg</td><td>Eskimo_dog</td><td>0.40339019894599915</td><td>40.34</td></tr>
+  <tr><td>170</td><td>45.jpg</td><td>dogsled</td><td>0.016841821372509003</td><td>1.68</td></tr>
+  <tr><td>171</td><td>3.jpg</td><td>Siamese_cat</td><td>0.29765722155570984</td><td>29.77</td></tr>
+  <tr><td>172</td><td>3.jpg</td><td>Egyptian_cat</td><td>0.1533990353345871</td><td>15.34</td></tr>
+  <tr><td>173</td><td>3.jpg</td><td>tabby</td><td>0.05800984799861908</td><td>5.8</td></tr>
+  <tr><td>174</td><td>51.jpg</td><td>bloodhound</td><td>0.7875667214393616</td><td>78.76</td></tr>
+  <tr><td>175</td><td>51.jpg</td><td>basset</td><td>0.08433403819799423</td><td>8.43</td></tr>
+  <tr><td>176</td><td>51.jpg</td><td>black-and-tan_coonhound</td><td>0.009510962292551994</td><td>0.95</td></tr>
+  <tr><td>177</td><td>47.jpg</td><td>miniature_poodle</td><td>0.43182024359703064</td><td>43.18</td></tr>
+  <tr><td>178</td><td>47.jpg</td><td>standard_poodle</td><td>0.29773396253585815</td><td>29.77</td></tr>
+  <tr><td>179</td><td>47.jpg</td><td>toy_poodle</td><td>0.1661127209663391</td><td>16.61</td></tr>
+  <tr><td>180</td><td>53.jpg</td><td>Chesapeake_Bay_retriever</td><td>0.6897292733192444</td><td>68.97</td></tr>
+  <tr><td>181</td><td>53.jpg</td><td>vizsla</td><td>0.06522423774003983</td><td>6.52</td></tr>
+  <tr><td>182</td><td>53.jpg</td><td>bloodhound</td><td>0.04246928542852402</td><td>4.25</td></tr>
+  <tr><td>183</td><td>1.jpg</td><td>tabby</td><td>0.6031960844993591</td><td>60.32</td></tr>
+  <tr><td>184</td><td>1.jpg</td><td>tiger_cat</td><td>0.14564591646194458</td><td>14.56</td></tr>
+  <tr><td>185</td><td>1.jpg</td><td>Egyptian_cat</td><td>0.09836984425783157</td><td>9.84</td></tr>
+  <tr><td>186</td><td>52.jpg</td><td>Border_collie</td><td>0.8438758850097656</td><td>84.39</td></tr>
+  <tr><td>187</td><td>52.jpg</td><td>collie</td><td>0.07326020300388336</td><td>7.33</td></tr>
+  <tr><td>188</td><td>52.jpg</td><td>English_springer</td><td>0.02990243211388588</td><td>2.99</td></tr>
+  <tr><td>189</td><td>46.jpg</td><td>Yorkshire_terrier</td><td>0.4597250819206238</td><td>45.97</td></tr>
+  <tr><td>190</td><td>46.jpg</td><td>silky_terrier</td><td>0.2685936391353607</td><td>26.86</td></tr>
+  <tr><td>191</td><td>46.jpg</td><td>Australian_terrier</td><td>0.07266996800899506</td><td>7.27</td></tr>
+  <tr><td></td></tr>
+</tbody>
+  </table>
+  
 
     <br>
     <button class="w3-button w3-dark-grey">  <a href="index.html">RESET/HOME</a><i class="fa fa-arrow-right"></i></button>
