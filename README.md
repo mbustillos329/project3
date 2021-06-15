@@ -7,7 +7,8 @@
 * [Technologies](#technologies)
 * [Architecture](#Architecture)
 * [Setup](#setup)
-* [Contact](#contact)
+* [Challenges](#challenges)
+* [Content Creators](#Content Creators)
 
 ## General Info
 
@@ -19,4 +20,6 @@
 
 ## Setup
 
-## Contact
+## Challenges
+
+## Content Creators
