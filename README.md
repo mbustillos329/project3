@@ -8,7 +8,7 @@
 * [Architecture](#Architecture)
 * [Setup](#setup)
 * [Challenges](#challenges)
-* [Content Creators](#content creators)
+* [Content Creators](#content-creators)
 
 ## General Info
 
