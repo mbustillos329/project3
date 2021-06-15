@@ -14,6 +14,9 @@
 
 
 ## Tecnologies
+*Jupyter Notebook
+*HTML
+*Postgres
 
 
 ## Architecture
