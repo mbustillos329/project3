@@ -11,12 +11,12 @@
 * [Content Creators](#content-creators)
 
 ## General Info
-
+This project aims to build an App in which users would be able to select a picture and the App will tell them either is a Dog or a Cat
 
 ## Tecnologies
-*Jupyter Notebook
-*HTML
-*Postgres
+* Jupyter Notebook
+* HTML
+* Postgres
 
 
 ## Architecture
