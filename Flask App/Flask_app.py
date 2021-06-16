@@ -18,7 +18,7 @@ def home():
 
 
 #To use the predict button in our web-app
-@app.route('/predict',methods=['POST'])
+@app.route('/predict',methods=['GET'])
 def predict():
     #For rendering results on HTML GUI
     img = image.load_img(image_path, target_size=image_size)
