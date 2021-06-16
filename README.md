@@ -31,4 +31,4 @@ To access the web App you can click on the following link on a web browser:
 ## Challenges
 
 ## Content Creators
-Armand Francois - Ana Gomez - Jennifer Reyna - Monica Bustillos
+Armand Francois - Ana Gomez - Jennifer Reyna - Monica Bustillos - Quatrell Nevels
