@@ -33,7 +33,7 @@ To access the web App you can click on the following link on a web browser:
 The web app has three main sections
 
 * On the left side, you can find the list of pictures available to analyze.
-![library](Readme_images/Photo library.png)
+![library](Readme_images/Library.png)
 
 * On top of the web page, you can find a toolbar to go to all the pictures and a summary of the results.
 ![toolbar](Readme_images/Toolbar.png)
