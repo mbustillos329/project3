@@ -7,8 +7,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
-<!-- Load d3.js -->
-<script src="https://d3js.org/d3.v4.js"></script>
+<script type="text/javascript" src="webpage.js"></script>
+
+
 
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
@@ -41,18 +42,21 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
 
 <!-------------------------------------------------- SCROLL BAR W RENDERING PET IMAGES ---------------------------------------------------->
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 
   <div class="vertical-menu">
     <a href="#" class="active">Home</a>
+    
+    <select id="selPets" onchange="changepets(this.value)" >
+        
+    <option value="data/1.jpg">Pet 1</option>
+    <option value="data/2.jpg">Pet 2</option>
+    <option value="data/3.jpg">Pet 3</option>
+    <option value="data/4.jpg">Pet 4</option>
 
-    <button type="button" onclick="data/1.jpg">Pet 1</>
-    <a href="data/2.jpg">Pet 2</a>
-    <a href="data/3.jpg">Pet 3</a>
-    <a href="data/4.jpg">Pet 4</a>
-    <a href="data/5.jpg">Pet 5</a>
-    <a href="data/6.jpg">Pet 6</a>
-    <a href="data/7.jpg">Pet 7</a>
+  </select>
+    <!-- <a href="data/7.jpg">Pet 7</a>
     <a href="data/8.jpg">Pet 8</a>
     <a href="data/9.jpg">Pet 9</a>
     <a href="data/10.jpg">Pet 10</a>
@@ -110,7 +114,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <a href="data/62.jpg">Pet 62</a>
     <a href="data/63.jpg">Pet 63</a>
     <a href="data/64.jpg">Pet 64</a>
-    <a href="data/65.jpg">Pet 65</a>
+    <a href="data/65.jpg">Pet 65</a> -->
+
+
   </div>
   </div>
 </nav>
@@ -184,7 +190,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-third">
         <h5>What's the fluff?</h5>
-        <img src="images/user_cat_dog.jpg" id=mainphoto style="width:100%" alt="Render selected image">
+        <img src="images/user_cat_dog.jpg" style="width:100%" alt="Predicted Pet" id="mainpic">
       </div>
 
     </div>

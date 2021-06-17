@@ -3,5 +3,10 @@
 ///////  D3 FILE FOR REDERING PET PHOTOS //////////
 
 
-var pets = d3.select("mainpic").attr("src", "data/3.jpg");
+d3.select("#selPets").on("click", function(){
 
+    var pets = changepets(d3.select('#selPets option:checked').text())
+    
+})
+
+function changepets(petoption){console.log(petoption)}
