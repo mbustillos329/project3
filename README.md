@@ -24,11 +24,23 @@ To create this App first we develop a pre-defined machine learning model in Jupy
 
 ## Architecture
 In this section, you can find a diagram that represents step by step the process we follow to build our web application:
+![Architecture](./Readme_images/architecture.png)
 
 ## Setup
 To access the web App you can click on the following link on a web browser:
 
-## Challenges
+## Web App funtionalities
+The web app has three main sections
+
+* On the left side, you can find the list of pictures available to analyze.
+![catalog](./Readme_images/catalog_image.png)
+
+* On top of the web page, you can find a toolbar to go to all the pictures and a summary of the results.
+![toolbar](./Readme_images/toolbar_image.png)
+
+* And finally, in the center of the page, you could see the selected picture and the result of the prediction model.
+![prediction](./Readme_images/chart.png)
 
 ## Content Creators
 Armand Francois - Ana Gomez - Jennifer Reyna - Monica Bustillos - Quatrell Nevels
+
