@@ -36,7 +36,7 @@ The web app has three main sections
 ![library](Readme_images/Photo-library.png)
 
 * On top of the web page, you can find a toolbar to go to all the pictures and a summary of the results.
-![toolbar](Readme_images/Toolbar_image.png)
+![toolbar](Readme_images/Toolbar.png)
 
 * And finally, in the center of the page, you could see the selected picture and the result of the prediction model.
 ![prediction](Readme_images/Chart.png)
