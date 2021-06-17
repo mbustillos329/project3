@@ -33,13 +33,13 @@ To access the web App you can click on the following link on a web browser:
 The web app has three main sections
 
 * On the left side, you can find the list of pictures available to analyze.
-![catalog](Readme_images/catalog_image.png)
+![library](Readme_images/Photo-library.png)
 
 * On top of the web page, you can find a toolbar to go to all the pictures and a summary of the results.
-![toolbar](Readme_images/toolbar_image.png)
+![toolbar](Readme_images/Toolbar_image.png)
 
 * And finally, in the center of the page, you could see the selected picture and the result of the prediction model.
-![prediction](Readme_images/chart.png)
+![prediction](Readme_images/Chart.png)
 
 ## Content Creators
 Armand Francois - Ana Gomez - Jennifer Reyna - Monica Bustillos - Quatrell Nevels
