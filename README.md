@@ -24,7 +24,7 @@ To create this App first we develop a pre-defined machine learning model in Jupy
 
 ## Architecture
 In this section, you can find a diagram that represents step by step the process we follow to build our web application:
-![Architecture](Readme_images/architecture.png)
+![Architecture](Readme_images/Architecture.png)
 
 ## Setup
 To access the web App you can click on the following link on a web browser:
