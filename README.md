@@ -1,6 +1,6 @@
 # Cat vs Dog - Machine Learning App
 ### A classifier App that can distinguish dogs from cats.
-![Cat vs Dog](./catdog_image.png)
+!./catdog_image.png
 
 ## Table of contents
 * [General info](#general-info)
@@ -24,7 +24,7 @@ To create this App first we develop a pre-defined machine learning model in Jupy
 
 ## Architecture
 In this section, you can find a diagram that represents step by step the process we follow to build our web application:
-![Architecture](./Readme_images/architecture.png)
+![Architecture](/Readme_images/architecture.png)
 
 ## Setup
 To access the web App you can click on the following link on a web browser:
@@ -33,7 +33,7 @@ To access the web App you can click on the following link on a web browser:
 The web app has three main sections
 
 * On the left side, you can find the list of pictures available to analyze.
-![catalog](./Readme_images/catalog_image.png)
+![catalog](/Readme_images/catalog_image.png)
 
 * On top of the web page, you can find a toolbar to go to all the pictures and a summary of the results.
 ![toolbar](./Readme_images/toolbar_image.png)
