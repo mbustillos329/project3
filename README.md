@@ -1,6 +1,6 @@
 # Cat vs Dog - Machine Learning App
 ### A classifier App that can distinguish dogs from cats.
-!./catdog_image.png
+![Architecture](Readme_images/catdog_image.png)
 
 ## Table of contents
 * [General info](#general-info)
