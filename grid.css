@@ -1,3 +1,4 @@
+<style>
 div.desc {
   padding: 3px 0 3px;
   background-color: hsl(199, 74%, 66%);
@@ -47,3 +48,5 @@ div.desc {
     max-width: 100%;
   }
 }
+
+</style>
