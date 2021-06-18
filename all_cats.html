@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>What The Fluff!</title>
+<title>Cats</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -19,30 +19,14 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <!--------------------------------------- BLACK HEADER ----------------------------------------------------->
 <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
-  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
   <span class="w3-bar-item w3-right">Furry Friend Machine Learning </span>
 </div>
-
-<!-------------------------------------------------- LEFT SIDE BAR AND MINI ICON IMAGE ---------------------------------------------------->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container w3-row">
-    <div class="w3-col s4">
-      <img src="images/user_cat_dog.jpg" class="w3-circle w3-margin-center" style="width:46px">
-    </div>
-    <div class="w3-col s8 w3-bar">
-      <span><strong>Welcome, Fluff Lover!</strong></span><br>
-      <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a> -->
-    </div>
-  </div>
-  <hr>
 
 <!--------------- Overlay effect when opening sidebar on small screens ----------------->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!------------------------------------- ENTERING AREA FOR MAIN CENTER PAGE  -------------------------------------->
-<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+<div class="w3-main" style="margin-center:300px;margin-top:43px;">
 
   <!-- Header -->
   <header class="w3-container" style="padding-top:22px">
@@ -109,8 +93,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <h5>What's the fluff?</h5>
          <img src="images/user_cat_dog.jpg" style="width:100%" alt="Predicted Pet" id="petpic">
       </div>
-      
-
     </div>
   </div>
   <hr>
@@ -137,6 +119,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
   <br>
 
+
 <!---------------------- FOOTER INFO AT BOTTOM OF PAGE----------------------------------------> 
 
   <div class="w3-container w3-grey w3-padding-32">
@@ -159,13 +142,12 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <h5 class="w3-bottombar w3-border-orange">Fluffs of the month:</h5>
         <p>Sagan</p>
         <p>Iris</p>
-        <p>Max</p>
+        <p>Rocco</p>
         <p>Thor</p>
         <p>Spotty</p>
       </div>
     </div>
   </div>
-
   <!------------------------------------------- END OF PAGE CONTENT ------------------------------------------------------------->
 </div>
 
@@ -193,6 +175,7 @@ function w3_close() {
   overlayBg.style.display = "none";
 }
 </script>
+
 
 <script type="text/javascript" src="webpage.js"></script>
 </body>
