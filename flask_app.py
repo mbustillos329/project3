@@ -31,4 +31,5 @@ def predict():
     df = pd.DataFrame(results, columns=["id", "prediction", "probability"])
     new_dict = df.to_dict(orient="records")
  
+
     return jsonify(new_dict)
