@@ -2,34 +2,36 @@ div.desc {
   padding: 3px 0 3px;
   background-color: hsl(199, 74%, 66%);
   text-align: center;
-  font-weight: 500;
-  font-size: large;
+  font-weight: 600;
+  font-size: medium;
 }
 
 .row {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+  flex: 25%;
+  padding: 20px;
+  vertical-align: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  display: block;
+  flex-wrap: nowrap;
+  padding:0;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 60px;
   margin-right: 60px;
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  padding: 20px 1em 20px;
-  vertical-align: center;
-}
-
 .column img {
-  margin: 40px 40px 40px 40px;
+  margin: 10px 10px 10px 10px;
   align-items: center;
   width: 25em;
   height: 25em;
-  padding: 20px 20px 20px 20px;
+  padding: 4px;
   background-position: center;
+  background-color: black;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
