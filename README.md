@@ -31,6 +31,7 @@ In this section, you can find a diagram that represents step by step the process
 The web app has three main sections
 
 * On the left side, you can find the list of pictures available to analyze.
+
 ![library](images/Readme_images/Library.png)
 
 * On top of the web page, you can find a toolbar to go to all the pictures and a summary of the results.
