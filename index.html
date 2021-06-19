@@ -44,6 +44,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <a href="index.html" class="active">Select A Pet:</a>
     
     <select id="selPets" onchange="changepets(this.value)">  
+    <option>---</option>
     <option value="data/1.jpg">Pet 1</option>
     <option value="data/2.jpg">Pet 2</option>
     <option value="data/3.jpg">Pet 3</option>
@@ -176,33 +177,22 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </div>
   </div>
 
-<!-------------------------------- MAIN PHOTO ON CENTER PAGE ---------------------------------------->
+<!--------------------------------DISPLAY PHOTO AND MACHINE LEARNING RESULTS ---------------------------------------->
 
   <div class="w3-panel">
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-third">
-        <h1><strong>What's the fluff?</strong></h1>
-         <img src="images/user_cat_dog.jpg" style="width:100%" alt="Predicted Pet" id="petpic">
+        <h2><strong>Machine Learning Result:</strong></h2>
+         <img src="images/user_cat_dog.jpg" style="width:100%" alt="Predicted Pet" id="petpic"><div id="petpred"><h3><strong>Prediction: Tabby 60.32% </strong></h3></div>
       </div>
     </div>
   </div>
   <hr>
 
   <hr>
-<!----------------------DISPLAYED  MACHINE LEARNING RESULTS ---------------------------------------->
+<!----------------------BOTTOM HOME/RESET BUTTON ---------------------------------------->
   <div class="w3-container">
-    <h1>Machine Learning Results:</h1>
-
-  <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
-      <tr>
-        <td><h2>Top Prediction:</h2></td>
-        <td id="#mlpred"><h2>Cat/Dog</h2></td>
-      </tr>
-  </table>
-<br>
-<br>
     <button class="w3-button w3-dark-grey">  <a href="index.html">RESET/HOME</a><i class="fa fa-arrow-right"></i></button>
-  
   </div>
 
 <!---------------------- FOOTER INFO AT BOTTOM OF PAGE----------------------------------------> 
