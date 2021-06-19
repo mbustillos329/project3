@@ -17,7 +17,7 @@ To create this App first we develop a pre-defined machine learning model in Jupy
 ## Tecnologies
 * Jupyter Notebook
 * HTML/CSS
-* Java Script
+* JavaScript
 * Flask App
 * D3
 * Pre-defined Machine Learning Model
