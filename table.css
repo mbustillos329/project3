@@ -1,28 +1,57 @@
-<style>
+#panel {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 #customers {
-  font-family: Arial, Helvetica, sans-serif;
+  display: table;
+  font-family: "Raleway", sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: fit-content;
+  font-size: medium;
 }
 
 #customers td, #customers th {
-  border: 3px solid rgba(95, 32, 3, 0.274);
-  padding: 15px;
+  border: 3px solid #160903cc;
+  padding: 4px;
 }
 
 #customers {
-  margin-left: auto; 
-  margin-right: auto;
+  margin-left: 20%;
+  margin-right: 20%;
 }
+
 #customers tr:nth-child(even){background-color: #f2f2f2;}
 
-#customers tr:hover {background-color: #ddd;}
+#customers tr:hover {background-color: hsla(27, 96%, 54%, 0.781);}
 
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #c26903e3;
-  color: white;
+#header th {
+  padding: auto;
+  text-align: center;
+  background-color: hsl(199, 74%, 66%);
+  font-weight: 600;
+  font-size: medium;
 }
-</style>
+
+.mainframe {
+  overflow: visible;
+  position: fixed;
+  /* background-color: blue;  */
+  height: 500px;
+  width:100%;
+}
+.wrapper {
+  margin: 5%;
+  width: 90%;
+  height: 90%;
+  /* background-color: red; */
+}
+
+.allow-scroll {
+    position: sticky;
+    height: 505px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: visible;
+    background-color: #bbb5adab;
+}
