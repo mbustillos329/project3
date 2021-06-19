@@ -16,10 +16,12 @@ To create this App first we develop a pre-defined machine learning model in Jupy
 
 ## Tecnologies
 * Jupyter Notebook
-* HTML
+* HTML/CSS
+* Java Script
 * Flask App
 * D3
 * Pre-defined Machine Learning Model
+* Heroku
 
 ## Architecture
 In this section, you can find a diagram that represents step by step the process we follow to build our web application:
