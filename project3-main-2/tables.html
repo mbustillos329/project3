@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html>
+<title>Machine Learning Data</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="table.css">
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+
+<body class="w3-light-grey">
+
+<!--------------------------------------- BLACK HEADER ----------------------------------------------------->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <span class="w3-bar-item w3-right">Furry Friend Machine Learning </span>
+</div>
+
+<!--------------- Overlay effect when opening sidebar on small screens ----------------->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!------------------------------------- ENTERING AREA FOR MAIN CENTER PAGE  -------------------------------------->
+<div class="w3-main" style="margin-center:300px;margin-top:43px;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-dashboard"></i> Fluff Dashboard</b></h5>
+  </header>
+  
+  <!----------------------TOP YELLOW RESET/HOME BUTTON ---------------------------------------->
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-yellow w3-padding-16">
+        <!-- <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div> -->
+        <div class="w3-right">
+        </div>
+        <div class="w3-clear"></div>
+        <a href="index.html"><h4>RESET/HOME</h4></a>
+      </div>
+    </div>
+<!---------------------- TOP ORANGE CATS PAGE BUTTON ---------------------------------------->
+
+
+    <div class="w3-quarter">
+      <div class="w3-container w3-amber w3-padding-16">
+        <!-- <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div> -->
+        <div class="w3-right">
+          <!-- <h3>(# cats)</h3> -->
+        </div>
+        <div class="w3-clear"></div>
+        <a href="all_cats.html"><h4>CATS</h4></a>
+      </div>
+    </div>
+
+<!----------------------TOP ORANGE DOGS PAGE BUTTON ---------------------------------------->
+
+    <div class="w3-quarter">
+      <div class="w3-container w3-orange w3-padding-16">
+        <!-- <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div> -->
+        <div class="w3-right">
+          <!-- <h3>(# dogs)</h3> -->
+        </div>
+        <div class="w3-clear"></div>
+        <a href="all_dogs.html"><h4>DOGS</h4></a>
+      </div>
+    </div>
+
+<!---------------------- TOP ORANGE TABLE PAGE BUTTON ---------------------------------------->
+
+    <div class="w3-quarter">
+      <div class="w3-container w3-deep-orange w3-text-white w3-padding-16">
+        <!-- <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div> -->
+        <div class="w3-right">
+          <!-- <h3>??</h3> -->
+        </div>
+        <div class="w3-clear"></div>
+        <a href="tables.html"><h4>TABLE</h4></a>
+      </div>
+    </div>
+  </div>
+
+<!-------------------------------- TABLE ---------------------------------------->
+
+  <div class="w3-panel">
+    <div class="customers">
+    <div class="w3-row-padding" style="margin:center">
+     
+      <table id="customers">
+        <!-- <table class="table table-bordered table-hover table-condensed"> -->
+          <thead><tr><th title="Field #1">Image</th>
+          <th title="Field #2">Prediction</th>
+          <th title="Field #3">Probability</th>
+          <th title="Field #4">Probability Percentage</th>
+          </tr></thead>
+          <tbody><tr>
+          <td>1.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.603196084</td>
+          <td align="right">60.32</td>
+          </tr>
+          <tr>
+          <td>1.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.145645916</td>
+          <td align="right">14.56</td>
+          </tr>
+          <tr>
+          <td>1.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.098369844</td>
+          <td align="right">9.84</td>
+          </tr>
+          <tr>
+          <td>2.jpg</td>
+          <td>web_site</td>
+          <td align="right">0.311651081</td>
+          <td align="right">31.17</td>
+          </tr>
+          <tr>
+          <td>2.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.188512221</td>
+          <td align="right">18.85</td>
+          </tr>
+          <tr>
+          <td>2.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.085129388</td>
+          <td align="right">8.51</td>
+          </tr>
+          <tr>
+          <td>3.jpg</td>
+          <td>Siamese_cat</td>
+          <td align="right">0.297657222</td>
+          <td align="right">29.77</td>
+          </tr>
+          <tr>
+          <td>3.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.153399035</td>
+          <td align="right">15.34</td>
+          </tr>
+          <tr>
+          <td>3.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.058009848</td>
+          <td align="right">5.8</td>
+          </tr>
+          <tr>
+          <td>4.jpg</td>
+          <td>redbone</td>
+          <td align="right">0.179101989</td>
+          <td align="right">17.91</td>
+          </tr>
+          <tr>
+          <td>4.jpg</td>
+          <td>Irish_terrier</td>
+          <td align="right">0.117454812</td>
+          <td align="right">11.75</td>
+          </tr>
+          <tr>
+          <td>4.jpg</td>
+          <td>Rhodesian_ridgeback</td>
+          <td align="right">0.052770101</td>
+          <td align="right">5.28</td>
+          </tr>
+          <tr>
+          <td>5.jpg</td>
+          <td>Gordon_setter</td>
+          <td align="right">0.787726164</td>
+          <td align="right">78.77</td>
+          </tr>
+          <tr>
+          <td>5.jpg</td>
+          <td>black-and-tan_coonhound</td>
+          <td align="right">0.073026352</td>
+          <td align="right">7.3</td>
+          </tr>
+          <tr>
+          <td>5.jpg</td>
+          <td>toy_terrier</td>
+          <td align="right">0.012978022</td>
+          <td align="right">1.3</td>
+          </tr>
+          <tr>
+          <td>6.jpg</td>
+          <td>Cardigan</td>
+          <td align="right">0.463640779</td>
+          <td align="right">46.36</td>
+          </tr>
+          <tr>
+          <td>6.jpg</td>
+          <td>kelpie</td>
+          <td align="right">0.199248284</td>
+          <td align="right">19.92</td>
+          </tr>
+          <tr>
+          <td>6.jpg</td>
+          <td>Chihuahua</td>
+          <td align="right">0.045236547</td>
+          <td align="right">4.52</td>
+          </tr>
+          <tr>
+          <td>7.jpg</td>
+          <td>Persian_cat</td>
+          <td align="right">0.160049304</td>
+          <td align="right">16</td>
+          </tr>
+          <tr>
+          <td>7.jpg</td>
+          <td>computer_keyboard</td>
+          <td align="right">0.059338972</td>
+          <td align="right">5.93</td>
+          </tr>
+          <tr>
+          <td>7.jpg</td>
+          <td>Shetland_sheepdog</td>
+          <td align="right">0.019647857</td>
+          <td align="right">1.96</td>
+          </tr>
+          <tr>
+          <td>8.jpg</td>
+          <td>toy_terrier</td>
+          <td align="right">0.159555614</td>
+          <td align="right">15.96</td>
+          </tr>
+          <tr>
+          <td>8.jpg</td>
+          <td>whippet</td>
+          <td align="right">0.14947401</td>
+          <td align="right">14.95</td>
+          </tr>
+          <tr>
+          <td>8.jpg</td>
+          <td>wire-haired_fox_terrier</td>
+          <td align="right">0.115116388</td>
+          <td align="right">11.51</td>
+          </tr>
+          <tr>
+          <td>9.jpg</td>
+          <td>Italian_greyhound</td>
+          <td align="right">0.384186506</td>
+          <td align="right">38.42</td>
+          </tr>
+          <tr>
+          <td>9.jpg</td>
+          <td>Mexican_hairless</td>
+          <td align="right">0.135442585</td>
+          <td align="right">13.54</td>
+          </tr>
+          <tr>
+          <td>9.jpg</td>
+          <td>whippet</td>
+          <td align="right">0.035307828</td>
+          <td align="right">3.53</td>
+          </tr>
+          <tr>
+          <td>10.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.114343144</td>
+          <td align="right">11.43</td>
+          </tr>
+          <tr>
+          <td>10.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.090470552</td>
+          <td align="right">9.05</td>
+          </tr>
+          <tr>
+          <td>10.jpg</td>
+          <td>Siamese_cat</td>
+          <td align="right">0.074738391</td>
+          <td align="right">7.47</td>
+          </tr>
+          <tr>
+          <td>11.jpg</td>
+          <td>flat-coated_retriever</td>
+          <td align="right">0.718441784</td>
+          <td align="right">71.84</td>
+          </tr>
+          <tr>
+          <td>11.jpg</td>
+          <td>curly-coated_retriever</td>
+          <td align="right">0.029191321</td>
+          <td align="right">2.92</td>
+          </tr>
+          <tr>
+          <td>11.jpg</td>
+          <td>Newfoundland</td>
+          <td align="right">0.02785005</td>
+          <td align="right">2.79</td>
+          </tr>
+          <tr>
+          <td>13.jpg</td>
+          <td>Persian_cat</td>
+          <td align="right">0.411869109</td>
+          <td align="right">41.19</td>
+          </tr>
+          <tr>
+          <td>13.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.038303658</td>
+          <td align="right">3.83</td>
+          </tr>
+          <tr>
+          <td>13.jpg</td>
+          <td>lynx</td>
+          <td align="right">0.027990244</td>
+          <td align="right">2.8</td>
+          </tr>
+          <tr>
+          <td>14.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.534004867</td>
+          <td align="right">53.4</td>
+          </tr>
+          <tr>
+          <td>14.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.211415201</td>
+          <td align="right">21.14</td>
+          </tr>
+          <tr>
+          <td>14.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.060526974</td>
+          <td align="right">6.05</td>
+          </tr>
+          <tr>
+          <td>15.jpg</td>
+          <td>Persian_cat</td>
+          <td align="right">0.069341019</td>
+          <td align="right">6.93</td>
+          </tr>
+          <tr>
+          <td>15.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.06771823</td>
+          <td align="right">6.77</td>
+          </tr>
+          <tr>
+          <td>15.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.041978687</td>
+          <td align="right">4.2</td>
+          </tr>
+          <tr>
+          <td>16.jpg</td>
+          <td>Persian_cat</td>
+          <td align="right">0.065091163</td>
+          <td align="right">6.51</td>
+          </tr>
+          <tr>
+          <td>16.jpg</td>
+          <td>sleeping_bag</td>
+          <td align="right">0.047519617</td>
+          <td align="right">4.75</td>
+          </tr>
+          <tr>
+          <td>16.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.043324824</td>
+          <td align="right">4.33</td>
+          </tr>
+          <tr>
+          <td>17.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.274077684</td>
+          <td align="right">27.41</td>
+          </tr>
+          <tr>
+          <td>17.jpg</td>
+          <td>Persian_cat</td>
+          <td align="right">0.146972492</td>
+          <td align="right">14.7</td>
+          </tr>
+          <tr>
+          <td>17.jpg</td>
+          <td>lynx</td>
+          <td align="right">0.110994361</td>
+          <td align="right">11.1</td>
+          </tr>
+          <tr>
+          <td>18.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.442376494</td>
+          <td align="right">44.24</td>
+          </tr>
+          <tr>
+          <td>18.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.313168168</td>
+          <td align="right">31.32</td>
+          </tr>
+          <tr>
+          <td>18.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.075158112</td>
+          <td align="right">7.52</td>
+          </tr>
+          <tr>
+          <td>19.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.279058099</td>
+          <td align="right">27.91</td>
+          </tr>
+          <tr>
+          <td>19.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.211382762</td>
+          <td align="right">21.14</td>
+          </tr>
+          <tr>
+          <td>19.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.083032377</td>
+          <td align="right">8.3</td>
+          </tr>
+          <tr>
+          <td>20.jpg</td>
+          <td>Staffordshire_bullterrier</td>
+          <td align="right">0.477831483</td>
+          <td align="right">47.78</td>
+          </tr>
+          <tr>
+          <td>20.jpg</td>
+          <td>American_Staffordshire_terrier</td>
+          <td align="right">0.335366338</td>
+          <td align="right">33.54</td>
+          </tr>
+          <tr>
+          <td>20.jpg</td>
+          <td>bull_mastiff</td>
+          <td align="right">0.063400045</td>
+          <td align="right">6.34</td>
+          </tr>
+          <tr>
+          <td>21.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.588754594</td>
+          <td align="right">58.88</td>
+          </tr>
+          <tr>
+          <td>21.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.15857248</td>
+          <td align="right">15.86</td>
+          </tr>
+          <tr>
+          <td>21.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.136397541</td>
+          <td align="right">13.64</td>
+          </tr>
+          <tr>
+          <td>22.jpg</td>
+          <td>Persian_cat</td>
+          <td align="right">0.659578443</td>
+          <td align="right">65.96</td>
+          </tr>
+          <tr>
+          <td>22.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.121320717</td>
+          <td align="right">12.13</td>
+          </tr>
+          <tr>
+          <td>22.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.045737598</td>
+          <td align="right">4.57</td>
+          </tr>
+          <tr>
+          <td>23.jpg</td>
+          <td>wire-haired_fox_terrier</td>
+          <td align="right">0.245019615</td>
+          <td align="right">24.5</td>
+          </tr>
+          <tr>
+          <td>23.jpg</td>
+          <td>papillon</td>
+          <td align="right">0.094142899</td>
+          <td align="right">9.41</td>
+          </tr>
+          <tr>
+          <td>23.jpg</td>
+          <td>toy_terrier</td>
+          <td align="right">0.070537679</td>
+          <td align="right">7.05</td>
+          </tr>
+          <tr>
+          <td>24.jpg</td>
+          <td>redbone</td>
+          <td align="right">0.960553646</td>
+          <td align="right">96.06</td>
+          </tr>
+          <tr>
+          <td>24.jpg</td>
+          <td>Rhodesian_ridgeback</td>
+          <td align="right">0.028515033</td>
+          <td align="right">2.85</td>
+          </tr>
+          <tr>
+          <td>24.jpg</td>
+          <td>vizsla</td>
+          <td align="right">0.002884142</td>
+          <td align="right">0.29</td>
+          </tr>
+          <tr>
+          <td>25.jpg</td>
+          <td>window_screen</td>
+          <td align="right">0.280985147</td>
+          <td align="right">28.1</td>
+          </tr>
+          <tr>
+          <td>25.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.221812293</td>
+          <td align="right">22.18</td>
+          </tr>
+          <tr>
+          <td>25.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.032540493</td>
+          <td align="right">3.25</td>
+          </tr>
+          <tr>
+          <td>26.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.5235008</td>
+          <td align="right">52.35</td>
+          </tr>
+          <tr>
+          <td>26.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.068417743</td>
+          <td align="right">6.84</td>
+          </tr>
+          <tr>
+          <td>26.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.057925172</td>
+          <td align="right">5.79</td>
+          </tr>
+          <tr>
+          <td>27.jpg</td>
+          <td>Pomeranian</td>
+          <td align="right">0.327608258</td>
+          <td align="right">32.76</td>
+          </tr>
+          <tr>
+          <td>27.jpg</td>
+          <td>bucket</td>
+          <td align="right">0.052963171</td>
+          <td align="right">5.3</td>
+          </tr>
+          <tr>
+          <td>27.jpg</td>
+          <td>Persian_cat</td>
+          <td align="right">0.049122751</td>
+          <td align="right">4.91</td>
+          </tr>
+          <tr>
+          <td>28.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.428009391</td>
+          <td align="right">42.8</td>
+          </tr>
+          <tr>
+          <td>28.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.279487222</td>
+          <td align="right">27.95</td>
+          </tr>
+          <tr>
+          <td>28.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.066126704</td>
+          <td align="right">6.61</td>
+          </tr>
+          <tr>
+          <td>29.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.568130434</td>
+          <td align="right">56.81</td>
+          </tr>
+          <tr>
+          <td>29.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.253242731</td>
+          <td align="right">25.32</td>
+          </tr>
+          <tr>
+          <td>29.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.101209126</td>
+          <td align="right">10.12</td>
+          </tr>
+          <tr>
+          <td>30.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.508765876</td>
+          <td align="right">50.88</td>
+          </tr>
+          <tr>
+          <td>30.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.119026758</td>
+          <td align="right">11.9</td>
+          </tr>
+          <tr>
+          <td>30.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.105341941</td>
+          <td align="right">10.53</td>
+          </tr>
+          <tr>
+          <td>31.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.256062835</td>
+          <td align="right">25.61</td>
+          </tr>
+          <tr>
+          <td>31.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.112436108</td>
+          <td align="right">11.24</td>
+          </tr>
+          <tr>
+          <td>31.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.077956341</td>
+          <td align="right">7.8</td>
+          </tr>
+          <tr>
+          <td>32.jpg</td>
+          <td>Appenzeller</td>
+          <td align="right">0.07639531</td>
+          <td align="right">7.64</td>
+          </tr>
+          <tr>
+          <td>32.jpg</td>
+          <td>miniature_pinscher</td>
+          <td align="right">0.067559414</td>
+          <td align="right">6.76</td>
+          </tr>
+          <tr>
+          <td>32.jpg</td>
+          <td>beagle</td>
+          <td align="right">0.057652652</td>
+          <td align="right">5.77</td>
+          </tr>
+          <tr>
+          <td>33.jpg</td>
+          <td>Tibetan_mastiff</td>
+          <td align="right">0.164965287</td>
+          <td align="right">16.5</td>
+          </tr>
+          <tr>
+          <td>33.jpg</td>
+          <td>collie</td>
+          <td align="right">0.071419783</td>
+          <td align="right">7.14</td>
+          </tr>
+          <tr>
+          <td>33.jpg</td>
+          <td>malamute</td>
+          <td align="right">0.064072751</td>
+          <td align="right">6.41</td>
+          </tr>
+          <tr>
+          <td>34.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.370646149</td>
+          <td align="right">37.06</td>
+          </tr>
+          <tr>
+          <td>34.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.341652304</td>
+          <td align="right">34.17</td>
+          </tr>
+          <tr>
+          <td>34.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.075616345</td>
+          <td align="right">7.56</td>
+          </tr>
+          <tr>
+          <td>35.jpg</td>
+          <td>hamper</td>
+          <td align="right">0.523397863</td>
+          <td align="right">52.34</td>
+          </tr>
+          <tr>
+          <td>35.jpg</td>
+          <td>bassinet</td>
+          <td align="right">0.046336502</td>
+          <td align="right">4.63</td>
+          </tr>
+          <tr>
+          <td>35.jpg</td>
+          <td>shopping_basket</td>
+          <td align="right">0.041111279</td>
+          <td align="right">4.11</td>
+          </tr>
+          <tr>
+          <td>36.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.147949651</td>
+          <td align="right">14.79</td>
+          </tr>
+          <tr>
+          <td>36.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.147530347</td>
+          <td align="right">14.75</td>
+          </tr>
+          <tr>
+          <td>36.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.109481186</td>
+          <td align="right">10.95</td>
+          </tr>
+          <tr>
+          <td>37.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.530715764</td>
+          <td align="right">53.07</td>
+          </tr>
+          <tr>
+          <td>37.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.235372543</td>
+          <td align="right">23.54</td>
+          </tr>
+          <tr>
+          <td>37.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.082895115</td>
+          <td align="right">8.29</td>
+          </tr>
+          <tr>
+          <td>38.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.181345835</td>
+          <td align="right">18.13</td>
+          </tr>
+          <tr>
+          <td>38.jpg</td>
+          <td>Siamese_cat</td>
+          <td align="right">0.115285538</td>
+          <td align="right">11.53</td>
+          </tr>
+          <tr>
+          <td>38.jpg</td>
+          <td>quilt</td>
+          <td align="right">0.1150956</td>
+          <td align="right">11.51</td>
+          </tr>
+          <tr>
+          <td>39.jpg</td>
+          <td>studio_couch</td>
+          <td align="right">0.078771263</td>
+          <td align="right">7.88</td>
+          </tr>
+          <tr>
+          <td>39.jpg</td>
+          <td>quilt</td>
+          <td align="right">0.065508507</td>
+          <td align="right">6.55</td>
+          </tr>
+          <tr>
+          <td>39.jpg</td>
+          <td>Siamese_cat</td>
+          <td align="right">0.055627238</td>
+          <td align="right">5.56</td>
+          </tr>
+          <tr>
+          <td>40.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.341695309</td>
+          <td align="right">34.17</td>
+          </tr>
+          <tr>
+          <td>40.jpg</td>
+          <td>Siamese_cat</td>
+          <td align="right">0.083992332</td>
+          <td align="right">8.4</td>
+          </tr>
+          <tr>
+          <td>40.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.074661441</td>
+          <td align="right">7.47</td>
+          </tr>
+          <tr>
+          <td>41.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.200981006</td>
+          <td align="right">20.1</td>
+          </tr>
+          <tr>
+          <td>41.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.083314188</td>
+          <td align="right">8.33</td>
+          </tr>
+          <tr>
+          <td>41.jpg</td>
+          <td>tiger_cat</td>
+          <td align="right">0.082624413</td>
+          <td align="right">8.26</td>
+          </tr>
+          <tr>
+          <td>42.jpg</td>
+          <td>Angora</td>
+          <td align="right">0.101764664</td>
+          <td align="right">10.18</td>
+          </tr>
+          <tr>
+          <td>42.jpg</td>
+          <td>groenendael</td>
+          <td align="right">0.090936825</td>
+          <td align="right">9.09</td>
+          </tr>
+          <tr>
+          <td>42.jpg</td>
+          <td>affenpinscher</td>
+          <td align="right">0.085413381</td>
+          <td align="right">8.54</td>
+          </tr>
+          <tr>
+          <td>43.jpg</td>
+          <td>tabby</td>
+          <td align="right">0.542246878</td>
+          <td align="right">54.22</td>
+          </tr>
+          <tr>
+          <td>43.jpg</td>
+          <td>Persian_cat</td>
+          <td align="right">0.074089959</td>
+          <td align="right">7.41</td>
+          </tr>
+          <tr>
+          <td>43.jpg</td>
+          <td>Egyptian_cat</td>
+          <td align="right">0.073487557</td>
+          <td align="right">7.35</td>
+          </tr>
+          <tr>
+          <td>44.jpg</td>
+          <td>skunk</td>
+          <td align="right">0.062240932</td>
+          <td align="right">6.22</td>
+          </tr>
+          <tr>
+          <td>44.jpg</td>
+          <td>shopping_cart</td>
+          <td align="right">0.043639041</td>
+          <td align="right">4.36</td>
+          </tr>
+          <tr>
+          <td>44.jpg</td>
+          <td>shopping_basket</td>
+          <td align="right">0.040653411</td>
+          <td align="right">4.07</td>
+          </tr>
+          <tr>
+          <td>45.jpg</td>
+          <td>Siberian_husky</td>
+          <td align="right">0.484537572</td>
+          <td align="right">48.45</td>
+          </tr>
+          <tr>
+          <td>45.jpg</td>
+          <td>Eskimo_dog</td>
+          <td align="right">0.403390199</td>
+          <td align="right">40.34</td>
+          </tr>
+          <tr>
+          <td>45.jpg</td>
+          <td>dogsled</td>
+          <td align="right">0.016841821</td>
+          <td align="right">1.68</td>
+          </tr>
+          <tr>
+          <td>46.jpg</td>
+          <td>Yorkshire_terrier</td>
+          <td align="right">0.459725082</td>
+          <td align="right">45.97</td>
+          </tr>
+          <tr>
+          <td>46.jpg</td>
+          <td>silky_terrier</td>
+          <td align="right">0.268593639</td>
+          <td align="right">26.86</td>
+          </tr>
+          <tr>
+          <td>46.jpg</td>
+          <td>Australian_terrier</td>
+          <td align="right">0.072669968</td>
+          <td align="right">7.27</td>
+          </tr>
+          <tr>
+          <td>47.jpg</td>
+          <td>miniature_poodle</td>
+          <td align="right">0.431820244</td>
+          <td align="right">43.18</td>
+          </tr>
+          <tr>
+          <td>47.jpg</td>
+          <td>standard_poodle</td>
+          <td align="right">0.297733963</td>
+          <td align="right">29.77</td>
+          </tr>
+          <tr>
+          <td>47.jpg</td>
+          <td>toy_poodle</td>
+          <td align="right">0.166112721</td>
+          <td align="right">16.61</td>
+          </tr>
+          <tr>
+          <td>48.jpg</td>
+          <td>English_springer</td>
+          <td align="right">0.691618681</td>
+          <td align="right">69.16</td>
+          </tr>
+          <tr>
+          <td>48.jpg</td>
+          <td>Welsh_springer_spaniel</td>
+          <td align="right">0.037468433</td>
+          <td align="right">3.75</td>
+          </tr>
+          <tr>
+          <td>48.jpg</td>
+          <td>Sussex_spaniel</td>
+          <td align="right">0.021113051</td>
+          <td align="right">2.11</td>
+          </tr>
+          <tr>
+          <td>49.jpg</td>
+          <td>collie</td>
+          <td align="right">0.655819118</td>
+          <td align="right">65.58</td>
+          </tr>
+          <tr>
+          <td>49.jpg</td>
+          <td>Shetland_sheepdog</td>
+          <td align="right">0.113749601</td>
+          <td align="right">11.37</td>
+          </tr>
+          <tr>
+          <td>49.jpg</td>
+          <td>chow</td>
+          <td align="right">0.019973408</td>
+          <td align="right">2</td>
+          </tr>
+          <tr>
+          <td>50.jpg</td>
+          <td>English_foxhound</td>
+          <td align="right">0.289556473</td>
+          <td align="right">28.96</td>
+          </tr>
+          <tr>
+          <td>50.jpg</td>
+          <td>beagle</td>
+          <td align="right">0.129629135</td>
+          <td align="right">12.96</td>
+          </tr>
+          <tr>
+          <td>50.jpg</td>
+          <td>Walker_hound</td>
+          <td align="right">0.088172719</td>
+          <td align="right">8.82</td>
+          </tr>
+          <tr>
+          <td>51.jpg</td>
+          <td>bloodhound</td>
+          <td align="right">0.787566721</td>
+          <td align="right">78.76</td>
+          </tr>
+          <tr>
+          <td>51.jpg</td>
+          <td>basset</td>
+          <td align="right">0.084334038</td>
+          <td align="right">8.43</td>
+          </tr>
+          <tr>
+          <td>51.jpg</td>
+          <td>black-and-tan_coonhound</td>
+          <td align="right">0.009510962</td>
+          <td align="right">0.95</td>
+          </tr>
+          <tr>
+          <td>52.jpg</td>
+          <td>Border_collie</td>
+          <td align="right">0.843875885</td>
+          <td align="right">84.39</td>
+          </tr>
+          <tr>
+          <td>52.jpg</td>
+          <td>collie</td>
+          <td align="right">0.073260203</td>
+          <td align="right">7.33</td>
+          </tr>
+          <tr>
+          <td>52.jpg</td>
+          <td>English_springer</td>
+          <td align="right">0.029902432</td>
+          <td align="right">2.99</td>
+          </tr>
+          <tr>
+          <td>53.jpg</td>
+          <td>Chesapeake_Bay_retriever</td>
+          <td align="right">0.689729273</td>
+          <td align="right">68.97</td>
+          </tr>
+          <tr>
+          <td>53.jpg</td>
+          <td>vizsla</td>
+          <td align="right">0.065224238</td>
+          <td align="right">6.52</td>
+          </tr>
+          <tr>
+          <td>53.jpg</td>
+          <td>bloodhound</td>
+          <td align="right">0.042469285</td>
+          <td align="right">4.25</td>
+          </tr>
+          <tr>
+          <td>54.jpg</td>
+          <td>hog</td>
+          <td align="right">0.099211484</td>
+          <td align="right">9.92</td>
+          </tr>
+          <tr>
+          <td>54.jpg</td>
+          <td>French_bulldog</td>
+          <td align="right">0.093935929</td>
+          <td align="right">9.39</td>
+          </tr>
+          <tr>
+          <td>54.jpg</td>
+          <td>American_black_bear</td>
+          <td align="right">0.056338899</td>
+          <td align="right">5.63</td>
+          </tr>
+          <tr>
+          <td>55.jpg</td>
+          <td>vizsla</td>
+          <td align="right">0.519178391</td>
+          <td align="right">51.92</td>
+          </tr>
+          <tr>
+          <td>55.jpg</td>
+          <td>American_Staffordshire_terrier</td>
+          <td align="right">0.151970714</td>
+          <td align="right">15.2</td>
+          </tr>
+          <tr>
+          <td>55.jpg</td>
+          <td>miniature_pinscher</td>
+          <td align="right">0.042152867</td>
+          <td align="right">4.22</td>
+          </tr>
+          <tr>
+          <td>56.jpg</td>
+          <td>toy_terrier</td>
+          <td align="right">0.713138998</td>
+          <td align="right">71.31</td>
+          </tr>
+          <tr>
+          <td>56.jpg</td>
+          <td>Chihuahua</td>
+          <td align="right">0.222281978</td>
+          <td align="right">22.23</td>
+          </tr>
+          <tr>
+          <td>56.jpg</td>
+          <td>Italian_greyhound</td>
+          <td align="right">0.006493457</td>
+          <td align="right">0.65</td>
+          </tr>
+          <tr>
+          <td>57.jpg</td>
+          <td>English_setter</td>
+          <td align="right">0.986784637</td>
+          <td align="right">98.68</td>
+          </tr>
+          <tr>
+          <td>57.jpg</td>
+          <td>clumber</td>
+          <td align="right">0.001089483</td>
+          <td align="right">0.11</td>
+          </tr>
+          <tr>
+          <td>57.jpg</td>
+          <td>cocker_spaniel</td>
+          <td align="right">0.000459116</td>
+          <td align="right">0.05</td>
+          </tr>
+          <tr>
+          <td>58.jpg</td>
+          <td>beagle</td>
+          <td align="right">0.550295949</td>
+          <td align="right">55.03</td>
+          </tr>
+          <tr>
+          <td>58.jpg</td>
+          <td>black-and-tan_coonhound</td>
+          <td align="right">0.097152494</td>
+          <td align="right">9.72</td>
+          </tr>
+          <tr>
+          <td>58.jpg</td>
+          <td>Walker_hound</td>
+          <td align="right">0.078175567</td>
+          <td align="right">7.82</td>
+          </tr>
+          <tr>
+          <td>59.jpg</td>
+          <td>Rhodesian_ridgeback</td>
+          <td align="right">0.586181223</td>
+          <td align="right">58.62</td>
+          </tr>
+          <tr>
+          <td>59.jpg</td>
+          <td>redbone</td>
+          <td align="right">0.34169966</td>
+          <td align="right">34.17</td>
+          </tr>
+          <tr>
+          <td>59.jpg</td>
+          <td>vizsla</td>
+          <td align="right">0.024720207</td>
+          <td align="right">2.47</td>
+          </tr>
+          <tr>
+          <td>60.jpg</td>
+          <td>basenji</td>
+          <td align="right">0.083172187</td>
+          <td align="right">8.32</td>
+          </tr>
+          <tr>
+          <td>60.jpg</td>
+          <td>English_foxhound</td>
+          <td align="right">0.073717259</td>
+          <td align="right">7.37</td>
+          </tr>
+          <tr>
+          <td>60.jpg</td>
+          <td>American_Staffordshire_terrier</td>
+          <td align="right">0.06596607</td>
+          <td align="right">6.6</td>
+          </tr>
+          <tr>
+          <td>61.jpg</td>
+          <td>American_Staffordshire_terrier</td>
+          <td align="right">0.931091607</td>
+          <td align="right">93.11</td>
+          </tr>
+          <tr>
+          <td>61.jpg</td>
+          <td>Staffordshire_bullterrier</td>
+          <td align="right">0.024593756</td>
+          <td align="right">2.46</td>
+          </tr>
+          <tr>
+          <td>61.jpg</td>
+          <td>bull_mastiff</td>
+          <td align="right">0.01246345</td>
+          <td align="right">1.25</td>
+          </tr>
+          <tr>
+          <td>62.jpg</td>
+          <td>Labrador_retriever</td>
+          <td align="right">0.950859725</td>
+          <td align="right">95.09</td>
+          </tr>
+          <tr>
+          <td>62.jpg</td>
+          <td>golden_retriever</td>
+          <td align="right">0.016882589</td>
+          <td align="right">1.69</td>
+          </tr>
+          <tr>
+          <td>62.jpg</td>
+          <td>flat-coated_retriever</td>
+          <td align="right">0.008420618</td>
+          <td align="right">0.84</td>
+          </tr>
+          <tr>
+          <td>63.jpg</td>
+          <td>basset</td>
+          <td align="right">0.263878196</td>
+          <td align="right">26.39</td>
+          </tr>
+          <tr>
+          <td>63.jpg</td>
+          <td>bloodhound</td>
+          <td align="right">0.043251116</td>
+          <td align="right">4.33</td>
+          </tr>
+          <tr>
+          <td>63.jpg</td>
+          <td>Great_Dane</td>
+          <td align="right">0.041339852</td>
+          <td align="right">4.13</td>
+          </tr>
+          <tr>
+          <td>64.jpg</td>
+          <td>Labrador_retriever</td>
+          <td align="right">0.958994627</td>
+          <td align="right">95.9</td>
+          </tr>
+          <tr>
+          <td>64.jpg</td>
+          <td>flat-coated_retriever</td>
+          <td align="right">0.006192194</td>
+          <td align="right">0.62</td>
+          </tr>
+          <tr>
+          <td>64.jpg</td>
+          <td>German_short-haired_pointer</td>
+          <td align="right">0.005059728</td>
+          <td align="right">0.51</td>
+          </tr>
+          <tr>
+          <td>65.jpg</td>
+          <td>Leonberg</td>
+          <td align="right">0.669549584</td>
+          <td align="right">66.95</td>
+          </tr>
+          <tr>
+          <td>65.jpg</td>
+          <td>German_shepherd</td>
+          <td align="right">0.062318247</td>
+          <td align="right">6.23</td>
+          </tr>
+          <tr>
+          <td>65.jpg</td>
+          <td>Norwegian_elkhound</td>
+          <td align="right">0.043854706</td>
+          <td align="right">4.39</td>
+          </tr>
+          </tbody>
+        <!-- </table> -->
+      </table>
+    </div>
+  </div>
+</div>
+  <hr>
+
+  <hr>
+<!-- --------------------DISPLAYED  RESULTS --------------------------------------
+  <div class="w3-container">
+    <h5>Probability (here we will have to add automate render of stats according to the data)</h5>
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tr>
+        <td>Result:</td>
+        <td>Cat/Dog</td>
+      </tr>
+      <tr>
+        <td>Likelihood of Cat:</td>
+        <td>15.7%</td>
+      </tr>
+      <tr>
+        <td>Likelihood of Dog:</td>
+        <td>5.6%</td>
+      </tr>
+    </table><br>
+    <button class="w3-button w3-dark-grey">  <a href="index.html">RESET/HOME</a><i class="fa fa-arrow-right"></i></button>
+  </div>
+  <br>
+ -->
+
+<!---------------------- FOOTER INFO AT BOTTOM OF PAGE----------------------------------------> 
+
+  <div class="w3-container w3-grey w3-padding-32">
+    <div class="w3-row">
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-yellow">Creators</h5>
+        <p>Ana Beatriz Gomez</p>
+        <p>Armand Francios</p>
+        <p>Jennifer Reyna</p>
+        <p>Monica Bustillos</p>
+        <p>Quatrell Nevels</p> 
+      </div>
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-amber">Sources</h5>
+        <p>Kaggle (we can add a hyperlink to these)</p>
+        <p>w3schools</p>
+        <p>Yahoo</p>
+      </div>
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-orange">Fluffs of the month:</h5>
+        <p>Sagan</p>
+        <p>Iris</p>
+        <p>Rocco</p>
+        <p>Thor</p>
+        <p>Spotty</p>
+      </div>
+    </div>
+  </div>
+  <!------------------------------------------- END OF PAGE CONTENT ------------------------------------------------------------->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+
+<script type="text/javascript" src="webpage.js"></script>
+</body>
+</html>
