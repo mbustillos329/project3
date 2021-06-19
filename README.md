@@ -6,8 +6,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Architecture](#Architecture)
-* [Setup](#setup)
-* [Challenges](#challenges)
+* [Web App Funtionalities](#Web-App-Funtionalities)
 * [Content Creators](#Content-Creators)
 
 ## General Info
@@ -17,22 +16,22 @@ To create this App first we develop a pre-defined machine learning model in Jupy
 
 ## Tecnologies
 * Jupyter Notebook
-* HTML
+* HTML/CSS
+* JavaScript
 * Flask App
 * D3
 * Pre-defined Machine Learning Model
+* Heroku
 
 ## Architecture
 In this section, you can find a diagram that represents step by step the process we follow to build our web application:
 ![Architecture](images/Readme_images/Architecture.png)
 
-## Setup
-To access the web App you can click on the following link on a web browser:
-
 ## Web App funtionalities
 The web app has three main sections
 
 * On the left side, you can find the list of pictures available to analyze.
+
 ![library](images/Readme_images/Library.png)
 
 * On top of the web page, you can find a toolbar to go to all the pictures and a summary of the results.
