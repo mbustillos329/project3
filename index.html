@@ -43,7 +43,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="vertical-menu">
     <a href="index.html" class="active">Select A Pet:</a>
     
-    <select id="selPets" onchange="changepets(this.value)" >  
+    <select id="selPets" onchange="changepets(this.value)">  
     <option value="data/1.jpg">Pet 1</option>
     <option value="data/2.jpg">Pet 2</option>
     <option value="data/3.jpg">Pet 3</option>
@@ -138,7 +138,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </div>
 <!---------------------- TOP ORANGE CATS PAGE BUTTON ---------------------------------------->
 
-
     <div class="w3-quarter">
       <div class="w3-container w3-amber w3-padding-16">
         <!-- <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div> -->
@@ -192,25 +191,19 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <hr>
 <!----------------------DISPLAYED  MACHINE LEARNING RESULTS ---------------------------------------->
   <div class="w3-container">
-    <h2>Machine Learning Results:</h2>
-    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
-      <tr>
-        <td><strong>Prediction</strong></td>
-        <td>Cat/Dog</td>
-      </tr>
-      <tr>
-        <td><strong>Probability:</strong></td>
-        <td>15.7%</td>
-      </tr>
-      <tr>
-        <td><strong>Probability Percentage:</strong></td>
-        <td>5.6%</td>
-      </tr>
-    </table><br>
-    <button class="w3-button w3-dark-grey">  <a href="index.html">RESET/HOME</a><i class="fa fa-arrow-right"></i></button>
-  </div>
-  <br>
+    <h1>Machine Learning Results:</h1>
 
+  <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tr>
+        <td><h2>Top Prediction:</h2></td>
+        <td id="#mlpred"><h2>Cat/Dog</h2></td>
+      </tr>
+  </table>
+<br>
+<br>
+    <button class="w3-button w3-dark-grey">  <a href="index.html">RESET/HOME</a><i class="fa fa-arrow-right"></i></button>
+  
+  </div>
 
 <!---------------------- FOOTER INFO AT BOTTOM OF PAGE----------------------------------------> 
 
@@ -225,10 +218,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <p>Quatrell Nevels</p> 
       </div>
       <div class="w3-container w3-third">
-        <h5 class="w3-bottombar w3-border-amber">Sources</h5>
-        <p>Kaggle (we can add a hyperlink to these)</p>
-        <p>w3schools</p>
-        <p>Yahoo</p>
+        <h5 class="w3-bottombar w3-border-amber">Sources:</h5>
+        <a href="https://github.com/mbustillos329/project3"><p>Our GitHub</p></a>
+        <a href="https://www.kaggle.com/d4rklucif3r/cat-and-dogs"><p>Kaggle Dataset</p></a>
+        <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_analytics&stacked=h"><p>W3Schools CSS</p></a>
       </div>
       <div class="w3-container w3-third">
         <h5 class="w3-bottombar w3-border-orange">Fluffs of the month:</h5>

@@ -19,7 +19,7 @@
 
 
 .vertical-menu {
-  width: auto; /* Set a width if you like */
+  width: flex; /* Set a width if you like */
 }
 
 .vertical-menu a {
